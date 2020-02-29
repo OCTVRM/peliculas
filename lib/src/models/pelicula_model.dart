@@ -75,6 +75,15 @@ class Pelicula {
     }else{
       return 'https://image.tmdb.org/t/p/w500/$posterPath';
     }
+  }
+
+  getBackgroundImg(){
+    if ( posterPath == null){
+      return 'https://www.chilecip.cl/wp-content/themes/consultix/images/no-image-found-360x260.png';
+
+    }else{
+      return 'https://image.tmdb.org/t/p/w500/$backdropPath';
+    }
 
   }
 
